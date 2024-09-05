@@ -1,0 +1,538 @@
+﻿[Dictionary]
+Version=CSPro 7.7
+Label=CARTO
+Name=CARTO_DICT
+RecordTypeStart=1
+RecordTypeLen=1
+Positions=Relative
+ZeroFill=Yes
+DecimalChar=Yes
+SecurityOptions=03A5AA9FA60E30622444B342DE7D586ACE21F8A12943853B8D2BC750FA5C7CAA
+
+[Languages]
+FR=Français
+EN=English
+
+[Level]
+Label=CARTO questionnaire
+Name=CARTO_QUEST
+
+[IdItems]
+
+[Item]
+Label=Numéro séquentiel de ZD
+Name=FD07
+Start=2
+Len=4
+DataType=Numeric
+ZeroFill=Yes
+
+[Item]
+Label=Code cartographe|Cartographer
+Name=FD04
+Start=6
+Len=4
+DataType=Numeric
+ZeroFill=Yes
+
+[Record]
+Label=PAGE1
+Name=FD_PAGE1
+RecordTypeValue='1'
+RecordLen=204
+
+[Item]
+Label=Région|Region
+Name=FD01
+Start=10
+Len=2
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=Région|Region
+Name=FD01_VS1
+Value=1;Adamaoua|Adamawa
+Value=2;Centre
+Value=3;Douala
+Value=4;Est|East
+Value=5;Extrême-Nord|Far-North
+Value=6;Littoral
+Value=7;Nord|North
+Value=8;Nord-Ouest|North-West
+Value=9;Ouest|West
+Value=10;Sud|South
+Value=11;Sud-Ouest|South-West
+Value=12;Yaoundé|Yaounde
+
+[Item]
+Label=Département|Division
+Name=FD02
+Start=12
+Len=2
+DataType=Numeric
+ZeroFill=Yes
+
+[Item]
+Label=Arrondissement|Subdivision
+Name=FD03
+Start=14
+Len=3
+DataType=Numeric
+ZeroFill=Yes
+
+[Item]
+Label=Nom de l'énumérateur|Enumerator
+Name=FD05
+Start=17
+Len=60
+DataType=Alpha
+
+[Item]
+Label=Numéro RGPH4 de la ZD|RGPH4 EA serial number
+Name=FD06
+Start=77
+Len=4
+DataType=Numeric
+ZeroFill=Yes
+
+[Item]
+Label=Urbain/Rural|Urban/Rural
+Name=FD08
+Start=81
+Len=1
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=Urbain/Rural|Urban/Rural
+Name=FD08_VS1
+Value=1;Urbain|Urban
+Value=2;Rural
+
+[Item]
+Label=Collecte des données|Data collection
+Name=FD09A
+Start=82
+Len=1
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=Collecte des données|Data collection
+Name=FD09A_VS1
+Value=1;En cours|On going
+Value=2;Partiel|Partial
+Value=3;Non|No
+
+[Item]
+Label=Collecte des données|Data collection
+Name=FD09
+Start=83
+Len=1
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=Collecte des données|Data collection
+Name=FD09_VS1
+Value=1;Oui, complètement|Yes, complety
+Value=2;Oui, partielelment|Oui, partially
+Value=3;Non|No
+Value=4;Problème de sécurité
+Value=5;Zone inhabitée
+Value=6;Zone inondée
+
+[Item]
+Label=Raison dénombrement partiel|Reason for partial enumeration
+Name=FD10
+Start=84
+Len=60
+DataType=Alpha
+
+[Item]
+Label=Raison non collecte des données|Reason for no data collection
+Name=FD11
+Start=144
+Len=60
+DataType=Alpha
+
+[Item]
+Label=Etat de fermeture|Well closed?
+Name=FERME
+Start=204
+Len=1
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=Etat de fermeture|Well closed?
+Name=FERME_VS1
+Value=1;Bien fermé|Yes
+Value=2;Mal fermé|No
+
+[Record]
+Label=PAGE 2
+Name=FD_PAGE2
+RecordTypeValue='2'
+MaxRecords=3000
+RecordLen=657
+
+[Item]
+Label=Numéro de ligne|Serial number
+Name=S00
+Start=10
+Len=4
+DataType=Numeric
+ZeroFill=Yes
+
+[Item]
+Label=Action
+Name=S0A
+Start=14
+Len=1
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=Action
+Name=S0A_VS1
+Value=1;Ajouter une structure|Add a structure
+Value=2;Ajouter un ménage dans une structure|Add a household in a structure
+Value=3;Continuer après|Continue after
+Value=4;Clôturer la ZD|Close the EA
+
+[Item]
+Label=Nom de bloc|Bloc name
+Name=S0B
+Start=15
+Len=80
+DataType=Alpha
+
+[Item]
+Label=Numéro de la structure|Serial number of structure
+Name=S01
+Start=95
+Len=4
+DataType=Numeric
+ZeroFill=Yes
+
+[Item]
+Label=Adresse de la structure|Address of structure
+Name=S02
+Start=99
+Len=160
+DataType=Alpha
+
+[Item]
+Label=Utilisation de la structure|Usage of structure
+Name=S03
+Start=259
+Len=2
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=Utilisation de la structure|Usage of structure
+Name=S03_VS1
+Value=1;Usage résidentiel principalement|Mainly residential use
+Value=2;Etablissement scolaire/universitaire|School / university
+Value=3;Formation sanitaire|Health facility
+Value=4;Boutique/Commerce|Shop / Commerce
+Value=5;Marché|Market
+Value=6;Eglise/Temple|Church / Temple
+Value=7;Mosquée|Mosque
+Value=8;Foyer/Maison communautaire|Foyer / Community house
+Value=9;Etablissement d’hébergement (Auberge/Hôtel)|Accommodation establishment (Hostel / Hotel)
+Value=10;Autre bâtiment administratif|Other administrative building
+Value=11;Vide|Empty
+Value=12;En construction|Under construction
+Value=96;Autre|Other
+
+[Item]
+Label=Préciser|Specify
+Name=S03P
+Start=261
+Len=70
+DataType=Alpha
+
+[Item]
+Label=Type de structure|Type of structure
+Name=S04
+Start=331
+Len=1
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=Type de structure|Type of structure
+Name=S04_VS1
+Value=1;Maison (logement) isolé(e)|Detached house (accommodation)
+Value=2;Maison à plusieurs logements|Multi-family house
+Value=4;Immeuble (à étages) d’appartements|Storey apartment building
+Value=5;Concession/Saré|Concession / Saré
+
+[Item]
+Label=Nom de la structure|Name of structure
+Name=S05
+Start=332
+Len=50
+DataType=Alpha
+
+[Item]
+Label=Résidence|Residence?
+Name=S06
+Start=382
+Len=1
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=Résidence|Residence?
+Name=S06_VS1
+Value=1;Oui|Yes
+Value=2;Non|No
+
+[Item]
+Label=GPS
+Name=S07
+Start=383
+Len=1
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=GPS
+Name=S07_VS1
+Value=1;Prendre les coordonnées maintenant|Take coordinates now
+Value=2;Copier les coordonnées à partir du ménage de la même structure|Copy coordinates from another house of the same structure
+Value=3;Reprendre les coordonnées|Correct coordinates (Take it a new time)
+Value=4;Prendre plus tard|Take later
+
+[Item]
+Label=Longitude
+Name=S07A
+Start=384
+Len=12
+DataType=Numeric
+Decimal=6
+DecimalChar=Yes
+ZeroFill=Yes
+
+[Item]
+Label=Latitude
+Name=S07B
+Start=396
+Len=12
+DataType=Numeric
+Decimal=6
+DecimalChar=Yes
+ZeroFill=Yes
+
+[Item]
+Label=Altitude
+Name=S07C
+Start=408
+Len=12
+DataType=Numeric
+Decimal=6
+DecimalChar=Yes
+ZeroFill=Yes
+
+[Item]
+Label=Précision|Precision
+Name=S07D
+Start=420
+Len=8
+DataType=Numeric
+Decimal=4
+DecimalChar=Yes
+ZeroFill=Yes
+
+[Item]
+Label=Nombre de satellites|Number of satelites
+Name=S07E
+Start=428
+Len=2
+DataType=Numeric
+ZeroFill=Yes
+
+[Item]
+Label=Numéro du ménage dans la structure|Serial number of HH in the structure
+Name=S08
+Start=430
+Len=3
+DataType=Numeric
+ZeroFill=Yes
+
+[Item]
+Label=Nom du chef de ménage|Name of the head of HH
+Name=S09
+Start=433
+Len=60
+DataType=Alpha
+
+[Item]
+Label=Taille du ménage|Size of HH
+Name=S10
+Start=493
+Len=2
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=Taille du ménage|Size of HH
+Name=S10_VS1
+Value=1:95
+Value=99;Refus de donner|Refusal to give
+
+[Item]
+Label=Numéro par lequel on peut joindre le ménage|Number through which the HH can be contact
+Name=S11
+Start=495
+Len=9
+DataType=Numeric
+ZeroFill=Yes
+
+[Item]
+Label=Observation/Etat occupation du logement|Observation/State of occupation of lodging
+Name=S12
+Start=504
+Len=80
+DataType=Alpha
+
+[Item]
+Label=Un membre dans la filière cacao aout 2023 à juillet 2024
+Name=S13
+Start=584
+Len=1
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=Un membre dans la filière cacao aout 2023 à juillet 2024|Residence?
+Name=S13_VS1
+Value=1;Oui|Yes
+Value=2;Non|No
+
+[Item]
+Label=Que faisait t-il?
+Name=S14
+Start=585
+Len=6
+DataType=Alpha
+
+[ValueSet]
+Label=Que faisait t-il?
+Name=S14_VS1
+Value='A     ';Production des plants de cacao
+Value='B     ';Suivi de la production de cacao en champs
+Value='C     ';Recolte et operation post récolte de cacao
+Value='D     ';Commercialisation des fèves de cacao
+Value='E     ';Transformation de cacao (petite transformation)
+Value='X     ';Autre
+
+[Item]
+Label=Production des plants de cacao
+Name=S14A
+Start=591
+Len=1
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=Production des plants de cacao
+Name=S14A_VS1
+Value=1;Oui|Yes
+Value=2;Non|No
+
+[Item]
+Label=Suivi de la production de cacao en champs
+Name=S14B
+Start=592
+Len=1
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=Suivi de la production de cacao en champs
+Name=S14B_VS1
+Value=1;Oui|Yes
+Value=2;Non|No
+
+[Item]
+Label=Recolte et operation post récolte de cacao
+Name=S14C
+Start=593
+Len=1
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=Recolte et operation post récolte de cacao
+Name=S14C_VS1
+Value=1;Oui|Yes
+Value=2;Non|No
+
+[Item]
+Label=Commercialisation des fèves de cacao
+Name=S14D
+Start=594
+Len=1
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=Commercialisation des fèves de cacao
+Name=S14D_VS1
+Value=1;Oui|Yes
+Value=2;Non|No
+
+[Item]
+Label=Transformation de cacao (petite transformation)
+Name=S14E
+Start=595
+Len=1
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=Transformation de cacao (petite transformation)
+Name=S14E_VS1
+Value=1;Oui|Yes
+Value=2;Non|No
+
+[Item]
+Label=Autre
+Name=S14X
+Start=596
+Len=1
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=Autre
+Name=S14X_VS1
+Value=1;Oui|Yes
+Value=2;Non|No
+
+[Item]
+Label=Autre
+Name=S14XX
+Start=597
+Len=60
+DataType=Alpha
+
+[Item]
+Label=Y'a t il des enfants de 5 à 17 ans dans le ménage?
+Name=S15
+Start=657
+Len=1
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=Y'a t il des enfants de 5 à 17 ans dans le ménage?|Residence?
+Name=S15_VS1
+Value=1;Oui|Yes
+Value=2;Non|No
