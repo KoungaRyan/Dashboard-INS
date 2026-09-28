@@ -5,9 +5,9 @@
 
 library(curl)
 # Set the FTP server details
-ftp_server <- "217.112.80.251"
-username <- "user_prix"
-password <- "user_prix@2023"
+ftp_server <- "srever"
+username <- "user_name"
+password <- "user_password"
 
 #cette syntaxe ne télécharge que le fichier FDSID401.dat
 # les fichiers ont le format "FDSID" + un code de 3 chiffres + ".dat"
